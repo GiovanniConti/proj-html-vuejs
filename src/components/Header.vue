@@ -26,9 +26,14 @@
           <img src="@/assets/img/h-2-slider-img-16.png" alt="Slider-2">
           <img src="@/assets/img/h-2-slider-img-17.png" alt="Slider-3" class="hero-img-flowers">
         </div>
-        <div class="container-chevrons">
+        <div class="container-chevrons-dots">
           <a href="#" class="chevronLink chevronLink-L"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
           <a href="#" class="chevronLink chevronLink-R"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          <ul class="list-dots d-flex m-0">
+            <li class="hero-dot mx-1 p-2"><i class="fa fa-circle" aria-hidden="true"></i></li>
+            <li class="hero-dot mx-1 p-2"><i class="fa fa-circle" aria-hidden="true"></i></li>
+            <li class="hero-dot hero-dot-active mx-2 p-2"><i class="fa fa-circle" aria-hidden="true"></i></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -105,8 +110,9 @@ header{
         }
       }
 
-      .container-chevrons{
+      .container-chevrons-dots{
         background-color: white;
+
         .chevronLink{
           position: absolute;
           top: 50%;
@@ -117,12 +123,32 @@ header{
           height: 30px;
           border-radius: 50%;
           line-height: 32px;
+
+          i{
+            &:hover{
+            transform: scale(1.3);
+          }
+          }
         }
         .chevronLink-L{
           left: 0;
         }
         .chevronLink-R{
           right: 0;
+        }
+
+        .list-dots{
+          color: rgb(225, 192, 176);
+          list-style: none;
+          position: absolute;
+          bottom: -20 px;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 10px;
+
+          .hero-dot-active{
+            transform: scale(1.4);
+          }
         }
       }
     }
