@@ -82,7 +82,7 @@ header{
     }
   }
   .hero{
-    max-width: 65%;
+    // max-width: 65%;
     .row{
       
       .hero-text{
