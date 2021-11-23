@@ -14,14 +14,14 @@
           </li>
       </ul>
     </div>
-    <div class="hero container-xl my-4">
-      <div class="row">
-        <div class="col hero-text text-start">
+    <div class="hero container-xl py-5 px-0">
+      <div class="row py-5">
+        <div class="col hero-text text-start p-0">
           <h2 class="hero-title m-0">Devotion that never <strong class="fst-italic">ends</strong> </h2>
           <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eligendi laboriosam quae, saepe ratione iure? Laboriosam quae, saepe ratione iure?</p>
           <button class="btn btn-hero my-3">READ MORE</button>
         </div>
-        <div class="col hero-img d-flex">
+        <div class="col hero-img d-flex p-0">
           <img src="@/assets/img/h-2-slider-img-15.png" alt="Slider-1">
           <img src="@/assets/img/h-2-slider-img-16.png" alt="Slider-2">
           <img src="@/assets/img/h-2-slider-img-17.png" alt="Slider-3" class="hero-img-flowers">
@@ -141,7 +141,7 @@ header{
           color: rgb(225, 192, 176);
           list-style: none;
           position: absolute;
-          bottom: -20 px;
+          bottom: 0;
           left: 50%;
           transform: translateX(-50%);
           font-size: 10px;

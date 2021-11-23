@@ -73,7 +73,6 @@ footer{
   background-color: rgb(192, 225, 207);
 
   .container-xl{
-    max-width: 65%;
 
     ul{
       list-style: none;
