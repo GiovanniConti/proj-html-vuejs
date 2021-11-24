@@ -2,8 +2,8 @@
   <div class="workingWithUs">
     <div class="textContainer">
       <h2 class="my-3"> {{sectionTitle}} <strong class="fst-italic">a message!</strong></h2>
-      <p>{{sectionInfo}}</p>
-      <button class="btn">CONTACT</button>
+      <p class="py-3 m-0">{{sectionInfo}}</p>
+      <button class="btn mt-3">CONTACT</button>
     </div>
   </div>
 </template>
@@ -23,7 +23,8 @@ export default {
 
 <style lang='scss'>
 .workingWithUs{
-  background-color: rgb(250, 247, 242);
+  background: url('../assets/img/work_with_us-bg.png');
+  background-size: cover;
   padding: 100px 0;
 
   .textContainer{
@@ -36,7 +37,7 @@ export default {
     }
     p{
       font-size: 20px;
-      color: rgb(150, 150, 150);
+      color: #878787;
     }
     button{
       background-color: rgb(216, 240, 227);
@@ -49,7 +50,7 @@ export default {
 
       &:hover{
         // background: rgb(239, 205, 190);
-        background: radial-gradient(circle closest-corner at 147px 41px, #F5D8CA 25%, #e2b6a0 35%);
+        background: radial-gradient(circle closest-corner at 147px 41px, #F5D8CA 25%, #E1C0B0 35%);
       }
 
     }
