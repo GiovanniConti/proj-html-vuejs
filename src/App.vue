@@ -3,6 +3,7 @@
     <Header></Header>
     <Main></Main>
     <Footer></Footer>
+    <Overlay></Overlay>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
+import Overlay from './components/Overlay.vue'
 
 export default {
   name: 'App',
@@ -17,6 +19,8 @@ export default {
     Header,
     Main,
     Footer,
+    Overlay,
+    
   }
 }
 </script>
