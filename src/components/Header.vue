@@ -81,6 +81,8 @@ header{
     ul{
 
       li{
+        cursor: pointer;
+
         img{
           width: 20px;
         }
@@ -106,6 +108,7 @@ header{
               border: 2px solid rgb(225, 192, 176);
               padding: 15px 30px;
               border-radius: 0;
+              box-shadow: none;
             }
       }
 
@@ -123,6 +126,7 @@ header{
 
       .container-chevrons-dots{
         background-color: white;
+        cursor: pointer;
 
         .chevronLink{
           position: absolute;
