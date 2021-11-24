@@ -9,7 +9,7 @@
           :key="i"
         >
         <div class="iconContainer text-center">
-          <a href="#"><i :class="item.icon" aria-hidden="true"></i></a>
+          <a href="#"><i class="cardIcon" :class="item.icon" aria-hidden="true"></i></a>
         </div>
           <h3 class="fs-5 my-2">{{item.title}}</h3>
           <p class="">{{item.detail}}</p>
@@ -76,11 +76,10 @@ export default {
           background-color: #FAF7F1;
 
           a{
-            i{
+            .cardIcon{
               line-height: 120px;
               vertical-align: middle;
               font-size: 50px;
-              color: #D8F0E3;
             }
           }
         }
@@ -89,6 +88,18 @@ export default {
             font-size: 14px;
             color: #878787;
           }
+      }
+      .wp_card:nth-child(1) .cardIcon{
+        color: #C0E1CF;
+      }
+      .wp_card:nth-child(2) .cardIcon{
+        color: #F8D12D;
+      }
+      .wp_card:nth-child(3) .cardIcon{
+        color: #80465F;
+      }
+      .wp_card:nth-child(4) .cardIcon{
+        color: #EB6950;
       }
     }
   }
