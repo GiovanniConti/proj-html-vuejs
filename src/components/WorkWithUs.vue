@@ -51,7 +51,7 @@ export default {
 
       &:hover{
         // background: rgb(239, 205, 190);
-        background: radial-gradient(circle closest-corner at 147px 41px, #F5D8CA 25%, #E1C0B0 35%);
+        background: #E1C0B0;
       }
 
     }
