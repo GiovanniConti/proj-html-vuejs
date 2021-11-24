@@ -95,6 +95,7 @@ export default {
 
             .ribbon-month{
               font-size: 12px;
+              font-weight: bold;
               margin-left: 60px * -.5;
               padding-top: 5px;
               padding-left: 8px;
