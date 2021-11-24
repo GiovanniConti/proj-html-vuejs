@@ -1,12 +1,12 @@
 <template>
   <footer>
     <div class="container-xl d-flex justify-content-between py-5">
-
+      <!-- Logo list -->
       <ul>
         <li><img src="@/assets/img/logo-sidearea-1.png" alt="logo-footer"></li>
         <li>Let's Get Creative</li>
       </ul>
-
+      <!-- Info array lists -->
       <ul
         v-for="(item, i) in footerInfo"
         :key="i"
@@ -18,14 +18,14 @@
           {{info}}
         </li>
       </ul>
-
+      <!-- social list -->
       <ul>
         <li>Stay in touch with us</li>
-        <li class="">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <li>
+          <i
+            v-for="(icon, i) in socialsIconsList"
+            :key="i"
+            :class="icon" aria-hidden="true"></i>
         </li>
       </ul>
     </div>
@@ -40,16 +40,6 @@ export default {
   },
   data() {
     return {
-      footerList: [
-        'maree.qode@gmail.com',
-        '+44645 321 789',
-        "Avenue d'Auderghem 10",
-        '1040 Brussels, Belgium',
-        'Stay in touch with us',
-      ],
-      contactsInfo: ["maree.qode@gmail.com", "+44645 321 789"],
-      addressInfo: ["Avenue d'Auderghem 10", "1040 Brussels, Belgium"],
-
       footerInfo: [
         {
           info1: "maree.qode@gmail.com",
@@ -59,7 +49,13 @@ export default {
           info1: "Avenue d'Auderghem 10",
           info2: "1040 Brussels, Belgium",
         },
-      ]
+      ],
+      socialsIconsList: [
+        "fa fa-twitter",
+        "fa fa-pinterest-p",
+        "fa fa-facebook",
+        "fa fa-linkedin",
+      ],
     };
   },
   methods: {
@@ -70,12 +66,14 @@ export default {
 
 <style lang="scss">
 footer{
-  background-color: rgb(192, 225, 207);
+  background-color: #C0E1CF;
 
   .container-xl{
 
     ul{
       list-style: none;
+      margin: 0;
+      padding-top: 15px;
 
       li{
         padding-bottom: 15px;
