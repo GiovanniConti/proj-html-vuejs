@@ -1,6 +1,6 @@
 <template>
   <div class="sectionWorkingPocess py-5 my-4">
-    <h2 class="sectionTitle m-0">Working <strong class="fst-italic">process</strong></h2>
+    <h2 class="sectionTitle m-0 fw-normal">Working <strong class="fst-italic">process</strong></h2>
 
     <div class="container-xl py-5">
       <div class="row">

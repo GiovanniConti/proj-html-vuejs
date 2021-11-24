@@ -9,7 +9,7 @@
           <div class="card px-1">
             <img class="card-img-top"  :src="require('@/assets/img/' + article.img)" :alt="article.img">
             <div class="card-body text-start p-0 pt-4">
-              <h5 class="card-title mb-3">{{ article.details }}</h5>
+              <h5 class="card-title mb-3 fw-bold">{{ article.details }}</h5>
               <h6 class="card-text fw-normal fst-italic">By {{ article.signature }}</h6>
             </div>
           </div>
@@ -79,7 +79,7 @@ export default {
           left: 30px;
 
           .ribbon-day{
-            padding-top: 5px;
+            padding: 5px 0;
             font-style: italic;
             background-color: rgb(192, 225, 207);
             margin-bottom: 0;

@@ -33,7 +33,6 @@ export default {
     
     h2{
       font-size: 60px;
-      font-weight: normal;
     }
     p{
       font-size: 20px;
@@ -43,6 +42,8 @@ export default {
       background-color: rgb(216, 240, 227);
       padding: 15px 50px;
       position: relative;
+      letter-spacing: 3px;
+      font-weight: 900;
 
       &:focus{
         box-shadow: none;

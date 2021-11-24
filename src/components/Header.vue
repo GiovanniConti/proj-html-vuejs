@@ -22,7 +22,7 @@
       <div class="row py-5">
         <!-- Container Hero Text (L) -->
         <div class="col hero-text text-start">
-          <h2 class="hero-title m-0">Devotion that never <strong class="fst-italic">ends</strong> </h2>
+          <h2 class="hero-title fw-normal m-0">Devotion that never <strong class="fst-italic">ends</strong> </h2>
           <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eligendi laboriosam quae, saepe ratione iure? Laboriosam quae, saepe ratione iure?</p>
           <button class="btn btn-hero my-3">READ MORE</button>
         </div>
@@ -89,7 +89,7 @@ header{
       width: 100px;
     }
     ul{
-      font-size: 12px;
+      font-size: 13px;
 
       li{
         cursor: pointer;
@@ -120,12 +120,13 @@ header{
             }
             .btn-hero{
               font-size: 11px;
-              font-weight: bold;
+              font-weight: 900;
               border: 2px solid #E1C0B0;
               padding: 15px 30px;
               border-radius: 0;
               box-shadow: none;
-              letter-spacing: 5px;
+              letter-spacing: 3px;
+
             }
       }
 

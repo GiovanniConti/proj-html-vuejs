@@ -7,7 +7,7 @@
         <li>Let's Get Creative</li>
       </ul>
       <!-- Info array lists -->
-      <ul
+      <ul class="text-start"
         v-for="(item, i) in footerInfo"
         :key="i"
       >
