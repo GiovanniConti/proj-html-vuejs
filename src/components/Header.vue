@@ -3,11 +3,13 @@
     <div class="navbar p-0">
       <img :src="require('@/assets/img/' + logoHeader)" alt="Logo Header" class="img-nav">
 
-      <ul class="navMenu list-inline m-0 fs-6 fw-bold">
+      <ul class="navList list-inline m-0 fs-6 fw-bold">
         <li
-          class="list-inline-item mx-4 p-1"
+          class="list-inline-item mx-4 px-1"
           v-for="(item, i) in navbarItems"
           :key="i"
+          @click= 'onNavItemClick(i)'
+          :class="(navItemActive === i) ? 'navItem-Active' : ''" 
         >{{ item }}</li>
         <li class="list-inline-item ms-4">
           <img src="@/assets/svg/svg-1.svg" alt="svg-navbar">
@@ -55,12 +57,16 @@ export default {
         'PORTFOLIO',
         'BLOG',
         'SHOP',
-        'ELEMENTS'
-      ]
+        'ELEMENTS',
+        // '<img src="@/assets/svg/svg-1.svg" alt="svg-navbar">'
+      ],
+      navItemActive: 0,
     };
   },
   methods: {
-
+    onNavItemClick(el) {
+      this.navItemActive = el;
+    }
   }
 }
 </script>
@@ -78,6 +84,11 @@ header{
         img{
           width: 20px;
         }
+      }
+
+      .navItem-Active{
+        background: linear-gradient(0deg, rgb(239, 205, 190) 30%, white 50%);
+        line-height: 15px;
       }
     }
   }

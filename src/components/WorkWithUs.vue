@@ -41,6 +41,17 @@ export default {
     button{
       background-color: rgb(216, 240, 227);
       padding: 15px 50px;
+      position: relative;
+
+      &:focus{
+        box-shadow: none;
+      }
+
+      &:hover{
+        // background: rgb(239, 205, 190);
+        background: radial-gradient(circle closest-corner at 147px 41px, #F5D8CA 25%, #e2b6a0 35%);
+      }
+
     }
   }
 }
