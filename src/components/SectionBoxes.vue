@@ -6,7 +6,7 @@
         :key="i"
       >
         <img class="w-100" :src='require("@/assets/img/" + boxImg)' :alt='"boxImg" + i'>
-        <div class="overlayBox p-4" :class="(i=== 3) ? 'overlayBox-active' : ''">
+        <div class="overlayBox p-4">
           <h2 class="fs-3">Illustrations of novels</h2>
           <h6 class="fst-italic m-0">Illustration</h6>
         </div>
@@ -54,9 +54,9 @@ export default {
       }
 
       &:hover{
-        .overlayBox-active{
-        opacity: 1;
-        transition: opacity .6s;
+        .overlayBox{
+          opacity: 1;
+          transition: opacity .6s;
         }
       }
     }
