@@ -3,9 +3,9 @@
     <div class="navbar p-0">
       <img :src="require('@/assets/img/' + logoHeader)" alt="Logo Header" class="img-nav">
 
-      <ul class="navList list-inline m-0 fs-6 fw-bold">
+      <ul class="navList list-inline m-0 fw-bold">
         <li
-          class="list-inline-item mx-4 px-1"
+          class="list-inline-item mx-3 px-1"
           v-for="(item, i) in navbarItems"
           :key="i"
           @click= 'onNavItemClick(i)'
@@ -79,9 +79,11 @@ header{
       width: 100px;
     }
     ul{
+      font-size: 12px;
 
       li{
         cursor: pointer;
+        letter-spacing: 5px;
 
         img{
           width: 20px;

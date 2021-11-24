@@ -25,7 +25,8 @@ export default {
 @import '@/styles/app.scss';
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  // font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif, Arial, Helvetica;
   text-align: center;
   // color: #2c3e50;
 }
