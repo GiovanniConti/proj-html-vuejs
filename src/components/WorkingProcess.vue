@@ -11,7 +11,7 @@
         <div class="iconContainer text-center">
           <a href="#"><i class="cardIcon" :class="item.icon" aria-hidden="true"></i></a>
         </div>
-          <h3 class="fs-5 my-2">{{item.title}}</h3>
+          <h3 class="fs-5 my-3">{{item.title}}</h3>
           <p class="">{{item.detail}}</p>
         </div>
       </div>
